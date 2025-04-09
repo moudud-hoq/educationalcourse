@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Course</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Custom Tailwind configuration for Google Fonts
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            roboto: ['Roboto', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-inter">
+  <div class="container mx-auto p-4">
+    <h1 class="text-4xl font-bold mb-4 font-poppins">Welcome to Tailwind Pixel Perfect Boilerplate</h1>
+    <p class="text-lg font-roboto">This is a basic setup using Tailwind CSS and Google Fonts as utility classes.</p>
+    <p class="font-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus itaque consequuntur
+      voluptates
+      accusamus excepturi, laudantium atque eum quas repudiandae.</p>
+    <p class="font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus itaque
+      consequuntur voluptates
+      accusamus excepturi, laudantium atque eum quas repudiandae.</p>
+    <p class="font-inter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus itaque consequuntur
+      voluptates
+      accusamus excepturi, laudantium atque eum quas repudiandae.</p>
+  </div>
+</body>
+
+</html>
