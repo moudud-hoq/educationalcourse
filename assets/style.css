@@ -1,0 +1,27 @@
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main{
+    background: white;
+}
+
+.menu-normalize{
+    text-decoration: none;
+    color: #424352;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.nav-btn{
+    background-color: #1B99D4;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0.5rem 1.25rem; /* px-5 py-2 equivalent */
+}
