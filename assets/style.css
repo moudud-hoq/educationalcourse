@@ -3,6 +3,10 @@ body {
     margin: 0 auto;
 }
 
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
 .main {
     background: white;
 }
@@ -76,8 +80,9 @@ body {
 /* Related Section Style */
 .rcsh4font1{
     font-family: 'Poppins', sans-serif;
-
 } 
 .rcsh4font {
     font-family: 'Roboto', sans-serif;
 }
+
+
