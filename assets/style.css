@@ -29,7 +29,7 @@ body {
 }
 
 /* Hero */
-.rinputstyle{
+.rinputstyle {
     border: 1px solid #E6E9FC;
     width: 100%;
     padding: 0.5rem 1rem;
@@ -37,4 +37,47 @@ body {
     margin-bottom: 1.5rem;
 }
 
-g
+/* Number Style */
+.number-column {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ncard {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.np1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    padding-bottom: 8px;
+}
+
+.np2 {
+    color: #4D607D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+
+/* Related Section Style */
+.rcsh4font1{
+    font-family: 'Poppins', sans-serif;
+
+} 
+.rcsh4font {
+    font-family: 'Roboto', sans-serif;
+}
