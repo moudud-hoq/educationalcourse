@@ -37,37 +37,4 @@ body {
     margin-bottom: 1.5rem;
 }
 
-/* Number Style */
-.number-column {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.ncard {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background-color: #f3f4f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:5px;
-}
-
-.np1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 32px;
-    letter-spacing: 0.1px;
-}
-
-.np2 {
-    color: #4D607D;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 22px;
-    letter-spacing: 0.1px;
-}
+g
