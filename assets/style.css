@@ -5,12 +5,15 @@ body {
 .poppins {
     font-family: 'Poppins', sans-serif;
 }
+
 .roboto {
     font-family: 'Roboto', sans-serif;
 }
+
 .inter {
     font-family: 'Inter', sans-serif;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,6 +24,7 @@ body {
     background: white;
 }
 
+/* Repeated Design */
 
 .menu-normalize {
     text-decoration: none;
@@ -88,15 +92,13 @@ body {
 }
 
 /* Related Section Style */
-.rcsh4font1{
+.rcsh4font1 {
     font-family: 'Poppins', sans-serif;
-} 
+}
+
 .rcsh4font {
     font-family: 'Roboto', sans-serif;
 }
-
-
-
 
 /* Next Cohoty Details */
 .bottom-box {
