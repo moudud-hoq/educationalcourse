@@ -33,14 +33,20 @@
   <div class="main">
 
     <!-- Logo and Navbar -->
-    <div class="flex justify-between items-center  container mx-auto p-4">
+    <div class="flex justify-between items-center container mx-auto p-4">
       <div class="logo">
-        <img src="./assets/images/black-logo 1.png" alt="Logo" class="h-10">
+        <img src="./assets/images/black-logo 1.png" alt="Logo" class="h-8 md:h-10">
       </div>
 
-      <!-- Right Section: Menu and Button -->
-      <div class="flex items-center gap-12">
+      <!-- Mobile Menu Button -->
+      <button class="lg:hidden" id="mobile-menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
 
+      <!-- Right Section: Menu and Button -->
+      <div class="hidden lg:flex items-center gap-12">
         <nav class="flex gap-11">
           <a href="#" class="menu-normalize">About Us</a>
           <a href="#" class="menu-normalize">Courses</a>
@@ -54,42 +60,51 @@
       </div>
     </div>
 
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="lg:hidden hidden" id="mobile-menu">
+      <div class="container mx-auto px-4 py-4 bg-white shadow-lg">
+        <nav class="flex flex-col space-y-4">
+          <a href="#" class="menu-normalize text-lg">About Us</a>
+          <a href="#" class="menu-normalize text-lg">Courses</a>
+          <a href="#" class="menu-normalize text-lg">Events</a>
+          <a href="#" class="menu-normalize text-lg">Blogs</a>
+          <button class="nav-btn w-full mt-4">
+            Apply Now
+          </button>
+        </nav>
+      </div>
+    </div>
+
     <!-- Hero Section start -->
-    <div class="bg-[#1B99D4] p-14">
+    <div class="bg-[#1B99D4] p-4 md:p-8 lg:p-14">
       <div class="container mx-auto">
-        <div class="flex justify-between items-center relative z-20">
+        <div class="flex flex-col lg:flex-row justify-between items-center relative z-20">
 
           <!-- left -->
-          <div class="w-5/12">
-            <div
-              class="bg-[#3DA8DA] inline-block text-white font-medium tracking-[1%] text-sm py-1 px-2 rounded-[5px] roboto">
+          <div class="w-full lg:w-5/12 text-center lg:text-left mb-8 lg:mb-0">
+            <div class="bg-[#3DA8DA] inline-block text-white font-medium tracking-[1%] text-sm py-1 px-4 rounded-[5px] roboto">
               Specialization over generalization
             </div>
-            <h2 class="leading-[47.5px] font-bold text-[42px] text-white my-4 roboto">Advanced Data Science & AI
-              Course</h2>
-            <p class="text-[17px] text-white max-w-md roboto">Equip yourself with data science skills through live,
-              interactive
-              lectures guided by industry expert mentors</p>
-            <h4 class="text-white text-[28px] letter-spacing-[-0.5px] mt-2 roboto">Live Interactive Classes</h4>
-            <button type="button"
-              class="flex items-center gap-1 bg-white font-medium rounded-[5px] py-3 px-4 text-[#272727] mt-6 roboto">
+            <h2 class="leading-[1.2] lg:leading-[47.5px] font-bold text-[32px] lg:text-[42px] text-white my-4 roboto">Advanced Data Science & AI Course</h2>
+            <p class="text-[15px] lg:text-[17px] text-white max-w-md mx-auto lg:mx-0 roboto">Equip yourself with data science skills through live, interactive lectures guided by industry expert mentors</p>
+            <h4 class="text-white text-[24px] lg:text-[28px] letter-spacing-[-0.5px] mt-2 roboto">Live Interactive Classes</h4>
+            <button type="button" class="flex items-center gap-1 bg-white font-medium rounded-[5px] py-3 px-4 text-[#272727] mt-6 roboto mx-auto lg:mx-0">
               <!-- SVG Icon -->
               <img src="./assets/images/downarrow.png" alt=""> Download Brochure
             </button>
           </div>
 
           <!-- right -->
-          <div class="w-4/12">
-            <div class="bg-white p-8 rounded-[10px]">
-              <h2 class="font-bold text-black text-4xl mb-2 roboto">We’re here to help!</h2>
-              <p class="text-[#252525B2] text-lg mt-4 roboto">Please contact us in case of any query.</p>
+          <div class="w-full lg:w-4/12">
+            <div class="bg-white p-6 lg:p-8 rounded-[10px]">
+              <h2 class="font-bold text-black text-3xl lg:text-4xl mb-2 roboto">We're here to help!</h2>
+              <p class="text-[#252525B2] text-base lg:text-lg mt-4 roboto">Please contact us in case of any query.</p>
               <form action="">
-                <input type="text" placeholder="Your name" class="rinputstyle mt-10 roboto">
+                <input type="text" placeholder="Your name" class="rinputstyle mt-6 lg:mt-10 roboto">
                 <input type="email" placeholder="Your email address" class="rinputstyle roboto">
                 <input type="tel" placeholder="Your phone number" class="rinputstyle roboto">
 
-                <select name="" id=""
-                  class="border border-[#E6E9FC] w-full py-2 px-4 rounded-md mb-6 text-[#727695] roboto">
+                <select name="" id="" class="border border-[#E6E9FC] w-full py-2 px-4 rounded-md mb-6 text-[#727695] roboto">
                   <option value="">Select course</option>
                   <option value="">Microsoft Excel</option>
                   <option value="">Microsoft Word</option>
@@ -99,18 +114,14 @@
                   <option value="">JS</option>
                 </select>
 
-                <button type="submit"
-                  class="mt-4 bg-[#1B99D4] text-white capitalize rounded-[5px] py-3 px-6 flex items-center gap-4">
+                <button type="submit" class="mt-4 bg-[#1B99D4] text-white capitalize rounded-[5px] py-3 px-6 flex items-center gap-4">
                   Get in Touch <img src="./assets/images/rightarrowVector.png" alt="">
-                  <!-- SVG Arrow -->
                 </button>
               </form>
             </div>
           </div>
-          <img class="w-[540px] absolute -bottom-[11%] left-[23%] z-10" src="./assets/images/menwithlaptop.png" alt="">
+          <img class="w-[280px] sm:w-[400px] md:w-[540px] absolute -bottom-[5%] sm:-bottom-[8%] md:-bottom-[11%] left-1/2 transform -translate-x-1/2 lg:left-[23%] lg:translate-x-0 z-10" src="./assets/images/menwithlaptop.png" alt="">
         </div>
-
-        <!-- Image Position Fixed -->
       </div>
     </div>
 
@@ -995,6 +1006,16 @@
 
   <!-- Main Div End Point -->
   </div>
+
+  <!-- Add this script at the end of the body tag -->
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 
 </html>
