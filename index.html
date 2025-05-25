@@ -434,6 +434,9 @@
                       Programming</span>
                     <img src="./assets/images/downcv.png" alt="" class="w-4 md:w-auto">
                   </button>
+                  <div class="px-4 py-3 text-gray-700 hidden">
+                    <p class="text-[#6F6B80] text-sm md:text-base">Introduction to programming concepts, basic syntax, and problem-solving techniques.</p>
+                  </div>
                 </div>
 
                 <div class="border border-[#D9D9D9] rounded">
@@ -444,6 +447,7 @@
                     <img src="./assets/images/downcv.png" alt="" class="w-4 md:w-auto">
                   </button>
                   <div class="px-4 py-3 text-gray-700 hidden">
+                    <p class="text-[#6F6B80] text-sm md:text-base">Learn fundamental data structures and algorithms for efficient problem-solving.</p>
                   </div>
                 </div>
 
@@ -454,6 +458,9 @@
                       Depth</span>
                     <img src="./assets/images/downcv.png" alt="" class="w-4 md:w-auto">
                   </button>
+                  <div class="px-4 py-3 text-gray-700 hidden">
+                    <p class="text-[#6F6B80] text-sm md:text-base">Deep dive into system architecture, scalability, and design patterns.</p>
+                  </div>
                 </div>
 
                 <div class="border border-[#D9D9D9] rounded">
@@ -463,6 +470,9 @@
                       Structures & Algorithms</span>
                     <img src="./assets/images/downcv.png" alt="" class="w-4 md:w-auto">
                   </button>
+                  <div class="px-4 py-3 text-gray-700 hidden">
+                    <p class="text-[#6F6B80] text-sm md:text-base">Advanced concepts in data structures and algorithms for complex problem-solving.</p>
+                  </div>
                 </div>
 
                 <div class="border border-[#D9D9D9] rounded">
@@ -472,6 +482,9 @@
                       Specialization</span>
                     <img src="./assets/images/downcv.png" alt="" class="w-4 md:w-auto">
                   </button>
+                  <div class="px-4 py-3 text-gray-700 hidden">
+                    <p class="text-[#6F6B80] text-sm md:text-base">Choose from various specialized tracks to focus on your area of interest.</p>
+                  </div>
                 </div>
 
                 <div class="border border-[#D9D9D9] rounded">
@@ -481,6 +494,9 @@
                       Projects in Partnership With Startups</span>
                     <img src="./assets/images/downcv.png" alt="" class="w-4 md:w-auto">
                   </button>
+                  <div class="px-4 py-3 text-gray-700 hidden">
+                    <p class="text-[#6F6B80] text-sm md:text-base">Real-world project experience working with startup partners.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1063,6 +1079,34 @@
       ]
     });
   </script>
+
+  <script>
+    $(document).ready(function() {
+      // Add click event to all accordion buttons
+      $('.border.rounded button').click(function() {
+        // Toggle the content div
+        $(this).next('.px-4').slideToggle(300);
+        
+        // Toggle the arrow image rotation
+        $(this).find('img').toggleClass('rotate-180');
+        
+        // Close other open accordions
+        $('.border.rounded button').not(this).next('.px-4').slideUp(300);
+        $('.border.rounded button').not(this).find('img').removeClass('rotate-180');
+      });
+    });
+  </script>
+
+  <style>
+    .rotate-180 {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+    }
+    
+    img {
+      transition: transform 0.3s ease;
+    }
+  </style>
 </body>
 
 </html>
