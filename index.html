@@ -13,6 +13,11 @@
     rel="stylesheet">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Counter Up Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
   <script>
     // Custom Tailwind configuration for Google Fonts
     tailwind.config = {
@@ -140,7 +145,7 @@
           </div>
           <div>
             <p class="np1 text-[#27B94E]">
-              126%</p>
+              <span class="counter">126</span>%</p>
             <p class="np2">
               170% Average Salary Hike</p>
           </div>
@@ -163,7 +168,7 @@
           </div>
           <div>
             <p class="np1 text-[#FFA41B]">
-              100+</p>
+              <span class="counter">100</span>+</p>
             <p class="np2">
               Job Placements</p>
           </div>
@@ -1015,6 +1020,12 @@
 
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
+    });
+
+    // Initialize Counter Up
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1000
     });
   </script>
 </body>
